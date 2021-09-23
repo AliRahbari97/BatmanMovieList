@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".Activity.MovieDetails_Activity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            //Poster
+
+            //Title
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:id="@+id/title_txtvw"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Title"
+                android:textSize="20sp" />
+
+            //Rating Bar
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:isIndicator="true"
+                android:numStars="10"
+                android:stepSize="1" />
+
+            //Chart
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_txtvw"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="Year"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/year_txtvw"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+
+                        android:text="Runtime"
+                        android:textSize="18sp" />
+
+                    <TextView
+
+                        android:id="@+id/runtime_txtvw"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+
+                        android:text="Language"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/language_txtvw"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+
+                        android:text="Rating"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/rate_txtvw"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            //StoryLine
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left|center"
+
+                android:text="StoryLine"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/story_txtvw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left|center"
+                android:text="Batman and Robin try to keep their relationship together even as they must stop Mr. Freeze and Poison Ivy from freezing Gotham City."
+                android:textSize="12sp" />
+
+            //Actors
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left|center"
+
+                android:text="Actors"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/actors_txtvw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left|center"
+                android:text="Arnold Schwarzenegger, George Clooney, Chris O'Donnell"
+                android:textSize="12sp" />
+
+            //Director
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left|center"
+
+                android:text="Director"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/director_txtvw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left|center"
+                android:text="Arnold Schwarzenegger, George Clooney, Chris O'Donnell"
+                android:textSize="12sp" />
+
+            //Awards
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left|center"
+
+                android:text="Awards"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/awards_txtvw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left|center"
+                android:text="13 wins 68 nominations"
+                android:textSize="12sp" />
+
+            //BoxOffice
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left|center"
+
+                android:text="BoxOffice"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/boxOffice_txtvw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left|center"
+                android:text="13 wins 68 nominations"
+                android:textSize="12sp" />
+
+            //Genre
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left|center"
+                android:text="Genre"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/genre_txtvw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="left|center"
+                android:text="13 wins 68 nominations"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            //Rating List
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left|center"
+                android:text="Ratings"
+                android:textSize="20sp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ratings_rclrvw"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
